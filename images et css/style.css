@@ -1,0 +1,16 @@
+body {
+    max-width: 375px;
+}
+
+
+
+.header {
+    text-align: center;
+    width: 375px;
+    height: 63px;
+}
+
+.header__title {
+    font-family: 'Shrikhand', sans-serif;
+    font-size: 90px;
+}
