@@ -73,6 +73,10 @@ body {
   border-radius: 25px;
   background: linear-gradient(0deg, #9356DC, #dc56b5);
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.3);
+  transition: filter 0.2s;
+}
+.button:hover {
+  filter: brightness(1.15);
 }
 .button__title {
   color: white;
@@ -122,9 +126,6 @@ body {
   margin-left: 5px;
   color: #7E7E7E;
 }
-.card__logo--purple {
-  color: #9356DC;
-}
 .card__number {
   display: flex;
   align-items: center;
@@ -135,6 +136,12 @@ body {
   height: 24px;
   background-color: #9356DC;
   transform: translateX(-10px);
+}
+.card:hover {
+  cursor: pointer;
+}
+.card:hover .card__logo {
+  color: #9356DC;
 }
 
 .restaurants {
@@ -183,7 +190,7 @@ body {
 
 .footer {
   background-color: #353535;
-  padding-left: 25px;
+  padding: 10px 0px 10px 25px;
 }
 .footer__title {
   color: white;
@@ -196,6 +203,7 @@ body {
   color: white;
   margin-bottom: 10px;
   padding: 0px;
+  font-family: "Roboto", sans-serif;
 }
 .footer__icon {
   padding-right: 10px;
