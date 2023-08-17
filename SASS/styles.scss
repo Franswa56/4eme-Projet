@@ -9,7 +9,7 @@ $second-color: #9356DC;
     font-size: 24px;
     font-weight: 700;  
 }
-@mixin button {
+@mixin button-style {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,7 +104,7 @@ body {
 }
 
 .button {
-   @include button;
+   @include button-style;
     &__title {
         @include button-title;
     }  
@@ -113,17 +113,106 @@ body {
 .fonctionnement {
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 68px;
     &__title {
         @include bold-title;
+        margin-top: 25px;
+        margin-bottom: 25px;
     }
     &__container {
         display: flex;
         flex-direction: column;
+        gap: 25px;
     }
-    &__card {
+}
+.card {
+        display: flex;
+        align-items: center;
         margin-left: 12px;
+        height: 73px;
         @include card-style;
-    }
-    
+        &__title {
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        &__logo {
+            margin-right: 25px;
+            margin-left: 5px;
+            color: #7E7E7E;
+            &--purple{
+                color: $second-color;
+            }
 
+        }
+        &__number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            border-radius: 25px;
+            width: 24px;
+            height: 24px;
+            background-color: $second-color;
+            transform: translateX(-10px);
+        }
+    }
+
+.restaurants {
+    background-color: $main-color;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-bottom: 66px;
+    &__title {
+        @include bold-title;
+    }
+}
+.resto-card {
+    @include card-style;
+    height: 250px;
+    &__image {
+        height: 75%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 20px 20px 0px 0px;
+        
+    }
+    &__content {
+        display: flex;
+        padding-left: 13px;
+    }
+    &__title {
+        margin: 0px;
+        margin-bottom: 5px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+    }
+    &__subtitle {
+        margin: 0px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+    }
+}
+
+.footer {
+    background-color: #353535;
+    padding-left: 25px;
+    &__title {
+        color: white;
+        font-family: 'Shrikhand', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    &__subtitle {
+        list-style: none;
+        color: white;
+        margin-bottom: 10px;
+        padding: 0px;
+    }
+    &__icon {
+        padding-right: 10px;
+    }
 }
