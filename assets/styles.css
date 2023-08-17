@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,500italic,700,700italic,300,300italic);
-/* Les Variables*/
 body {
   width: 100%;
   margin: 0px;
@@ -45,14 +44,15 @@ body {
   flex-direction: column;
   background-color: #F6F6F6;
   align-items: center;
+  padding-bottom: 57px;
 }
 .reservation__title {
   font-family: "Roboto", sans-serif;
   font-size: 24px;
+  font-weight: 700;
   text-align: center;
   padding: 39.5px 50px 10px 50px;
   margin: 0px;
-  font-weight: 700;
 }
 .reservation a {
   text-decoration: none;
@@ -70,12 +70,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 218px;
-  height: 50px;
-  background-color: pink;
   border-radius: 25px;
   background: linear-gradient(0deg, #9356DC, #dc56b5);
-  margin-bottom: 57px;
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.3);
 }
 .button__title {
@@ -84,6 +80,27 @@ body {
   font-size: 16px;
   font-weight: 400;
   text-align: center;
-  padding: 10px 20px;
+  margin: 0px;
+  padding: 13px 19px;
   text-decoration: none;
+}
+
+.fonctionnement {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.fonctionnement__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+.fonctionnement__container {
+  display: flex;
+  flex-direction: column;
+}
+.fonctionnement__card {
+  margin-left: 12px;
+  border-radius: 20px;
+  background-color: #F6F6F6;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
 }/*# sourceMappingURL=styles.css.map */

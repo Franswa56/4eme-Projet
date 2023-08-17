@@ -1,9 +1,38 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,500italic,700,700italic,300,300italic);
 
-/* Les Variables*/
+
 
 $main-color:#F6F6F6;
 $second-color: #9356DC;
+@mixin bold-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 700;  
+}
+@mixin button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    background: linear-gradient(0deg, $second-color, adjust-hue($second-color, 50));
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.3);
+}
+@mixin button-title {
+    color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+        margin: 0px;
+        padding: 13px 19px;
+        text-decoration:none;
+    }
+@mixin card-style {
+        border-radius: 20px;
+        background-color: #F6F6F6;
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+}  
+
 
 body {
     width: 100%;
@@ -54,13 +83,12 @@ body {
     flex-direction: column;
     background-color: $main-color;
     align-items: center;
+    padding-bottom: 57px;
     &__title {
-        font-family: 'Roboto', sans-serif;
-        font-size: 24px;
+        @include bold-title;
         text-align: center;
         padding: 39.5px 50px 10px 50px;
         margin: 0px;
-        font-weight: 700;
     }
     a {
         text-decoration: none;
@@ -76,23 +104,26 @@ body {
 }
 
 .button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 218px;
-    height: 50px;
-    background-color: pink;
-    border-radius: 25px;
-    background: linear-gradient(0deg, $second-color, adjust-hue($second-color, 50));
-    margin-bottom: 57px;
-    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.3);
+   @include button;
     &__title {
-        color: white;
-        font-family: 'Roboto', sans-serif;
-        font-size: 16px;
-        font-weight: 400;
-        text-align: center;
-        padding: 10px 20px;
-        text-decoration:none;
-    }    
+        @include button-title;
+    }  
+}
+
+.fonctionnement {
+    padding-left: 20px;
+    padding-right: 20px;
+    &__title {
+        @include bold-title;
+    }
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+    &__card {
+        margin-left: 12px;
+        @include card-style;
+    }
+    
+
 }
