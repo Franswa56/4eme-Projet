@@ -175,6 +175,7 @@ body {
 .resto-card__content {
   display: flex;
   padding-left: 13px;
+  justify-content: space-between;
 }
 .resto-card__title {
   margin: 0px;
@@ -186,6 +187,12 @@ body {
   margin: 0px;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
+}
+.resto-card__like {
+  width: 22px;
+  height: 21px;
+  padding-top: 15px;
+  margin-right: 25px;
 }
 
 .footer {

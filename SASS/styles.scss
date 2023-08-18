@@ -190,6 +190,8 @@ body {
     &__content {
         display: flex;
         padding-left: 13px;
+        justify-content: space-between;
+
     }
     &__title {
         margin: 0px;
@@ -201,6 +203,13 @@ body {
         margin: 0px;
         font-family: 'Roboto', sans-serif;
         font-weight: 300;
+    }
+    &__like {
+        width: 22px;
+        height: 21px;
+        padding-top: 15px;
+        margin-right: 25px;
+        
     }
 }
 
