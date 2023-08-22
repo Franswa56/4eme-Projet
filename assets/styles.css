@@ -126,6 +126,7 @@ body {
   margin-right: 25px;
   margin-left: 5px;
   color: #7E7E7E;
+  transition: color 300ms ease-in-out;
 }
 .card__number {
   display: flex;
@@ -196,6 +197,7 @@ body {
 }
 .resto-card__fullheart {
   opacity: 0;
+  transition: opacity 250ms ease-in-out;
 }
 .resto-card__heartcontainer {
   position: relative;
@@ -204,7 +206,6 @@ body {
   height: 21px;
   margin-top: 18px;
   margin-right: 15px;
-  transition: opacity 400ms ease-in-out;
 }
 .resto-card__heartcontainer:hover .resto-card__fullheart {
   opacity: 1;
