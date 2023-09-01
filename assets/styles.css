@@ -13,15 +13,6 @@
   0% {
     transform: translateX(0%);
   }
-  25% {
-    transform: translateX(-65%);
-  }
-  50% {
-    transform: translateX(-50%);
-  }
-  75% {
-    transform: translateX(-110%);
-  }
   100% {
     transform: translateX(-100%);
   }
@@ -224,7 +215,7 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  transition: transform 2s;
+  transition: transform 2s ease-in-out;
 }
 .menu-container__card::after {
   display: flex;

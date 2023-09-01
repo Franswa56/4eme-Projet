@@ -75,15 +75,6 @@ $second-color: #9356DC;
     0% {
         transform: translateX(0%);
     }
-    25% {
-        transform: translateX(-65%);
-    }
-    50%{
-        transform: translateX(-50%);
-    }
-    75% {
-        transform: translateX(-110%);
-    }
     100% {
         transform: translateX(-100%);
     }
@@ -130,7 +121,7 @@ body {
     width: 100%;
     left: 0;
     top: 0;
-    background-color: rgba(255, 255, 255, 0.90);
+    background-color: rgba(255, 255, 255, 0.9);
     animation: loader 0.01s;
     animation-delay: 1.75s;
     animation-fill-mode: both;
@@ -284,7 +275,7 @@ body {
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-        transition: transform 2s;
+        transition: transform 2s ease-in-out;
         &::after {
             display: flex;
             justify-content: center;
@@ -354,6 +345,7 @@ body {
         font-size: 16px;
         margin-top: 5px;
         padding-right: 15px;
+        
 
         
     }
