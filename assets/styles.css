@@ -9,22 +9,6 @@
     transform: translateY(0%);
   }
 }
-@keyframes price {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-@keyframes price-reverse {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0%);
-  }
-}
 @keyframes loader {
   100% {
     opacity: 0;
@@ -183,16 +167,6 @@ body {
   font-size: 18px;
   font-weight: 50;
 }
-.menu-page__subtitle::after {
-  display: block;
-  content: "_____";
-  color: #99E2D0;
-  width: 30px;
-  font-weight: 900;
-  font-size: 22px;
-  height: 0.25rem;
-  transform: translateY(-15px);
-}
 
 .menu-container {
   display: flex;
@@ -219,8 +193,7 @@ body {
   transition: transform 2s ease-in-out;
 }
 .menu-container__card:hover .menu-container__card-price {
-  margin-right: 5rem;
-  transition: margin-right 500ms;
+  margin-right: 45px;
 }
 .menu-container__card:hover .check {
   transform: translateX(0);
@@ -229,23 +202,6 @@ body {
 .menu-container__card:hover .check i {
   transform: rotate(360deg);
   transition: transform 500ms;
-}
-.menu-container__card::after {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-family: "Font Awesome 5 Free";
-  font-size: 36px;
-  content: "\f058";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 55px;
-  height: 100%;
-  background-color: #99E2D0;
-  transition: transform 0.8s;
-  transform: translateX(100%);
 }
 .menu-container__card:nth-child(1) {
   animation-delay: 0.2s;
@@ -261,10 +217,6 @@ body {
 }
 .menu-container__card:hover::after {
   transform: translateX(0%);
-}
-.menu-container__card:hover .menu-container__card-price {
-  animation: price 0.7s forwards;
-  transition: transform 1s;
 }
 .menu-container__card:not(:hover) .menu-container__card-price {
   animation: price-reverse 0.7s forwards;
@@ -283,6 +235,7 @@ body {
   overflow: hidden;
   white-space: nowrap;
   flex: 1;
+  justify-content: space-between;
 }
 .menu-container__card-subtitle {
   font-family: "Roboto", sans-serif;
@@ -297,9 +250,10 @@ body {
   font-weight: 700;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  margin-top: 5px;
+  margin: 0.75rem;
   align-items: flex-end;
   display: flex;
+  transition: margin-right 500ms;
 }
 
 .location {
