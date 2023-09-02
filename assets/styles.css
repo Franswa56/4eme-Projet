@@ -217,6 +217,9 @@ body {
   white-space: nowrap;
   transition: transform 2s ease-in-out;
 }
+.menu-container__card:hover .menu-container__card-subtitle {
+  width: 200px;
+}
 .menu-container__card::after {
   display: flex;
   justify-content: center;
@@ -279,6 +282,7 @@ body {
   margin-top: 5px;
   text-overflow: ellipsis;
   overflow: hidden;
+  width: 300px;
 }
 .menu-container__card-price {
   font-weight: 700;
