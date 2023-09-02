@@ -206,6 +206,7 @@ body {
   border-radius: 20px;
   background-color: #F6F6F6;
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
   height: 70px;
   width: 93%;
   background-color: white;
@@ -217,8 +218,17 @@ body {
   white-space: nowrap;
   transition: transform 2s ease-in-out;
 }
-.menu-container__card:hover .menu-container__card-subtitle {
-  width: 200px;
+.menu-container__card:hover .menu-container__card-price {
+  margin-right: 5rem;
+  transition: margin-right 500ms;
+}
+.menu-container__card:hover .check {
+  transform: translateX(0);
+  transition: transform 500ms;
+}
+.menu-container__card:hover .check i {
+  transform: rotate(360deg);
+  transition: transform 500ms;
 }
 .menu-container__card::after {
   display: flex;
@@ -270,16 +280,15 @@ body {
   overflow: hidden;
 }
 .menu-container__card-content {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  flex: 1;
 }
 .menu-container__card-subtitle {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 16px;
-  margin-left: 15px;
-  margin-top: 5px;
+  margin: 0 0 0.75rem 0.75rem;
   text-overflow: ellipsis;
   overflow: hidden;
   width: 300px;
@@ -289,8 +298,8 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   margin-top: 5px;
-  padding-right: 15px;
-  display: inline-block;
+  align-items: flex-end;
+  display: flex;
 }
 
 .location {

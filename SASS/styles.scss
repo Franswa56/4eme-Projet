@@ -266,6 +266,7 @@ body {
     padding-bottom: 40px;
     &__card {
         @include card-style();
+        display: flex;
         height: 70px;
         width: 93%;
         background-color: white;
@@ -276,6 +277,20 @@ body {
         text-overflow: ellipsis;
         white-space: nowrap;
         transition: transform 2s ease-in-out;
+        &:hover {
+            .menu-container__card-price {
+              margin-right: 5rem;
+              transition: margin-right 500ms;
+            }
+            .check {
+              transform: translateX(0);
+              transition: transform 500ms;
+              i {
+                transform: rotate(360deg);
+                transition: transform 500ms;
+              }
+            }
+          }
         &::after {
             display: flex;
             justify-content: center;
@@ -329,16 +344,15 @@ body {
         overflow: hidden;
     }
     &__card-content {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
+          overflow: hidden;
+          white-space: nowrap;
+          flex: 1;
     }
     &__card-subtitle {
         font-family: 'Roboto', sans-serif;
         font-weight: 300;
         font-size: 16px;
-        margin-left: 15px;
-        margin-top: 5px;
+        margin: 0 0 0.75rem 0.75rem;
         text-overflow: ellipsis;
         overflow: hidden;
         width: 300px;
@@ -348,8 +362,8 @@ body {
         font-family: 'Roboto', sans-serif;
         font-size: 16px;
         margin-top: 5px;
-        padding-right: 15px;
-        display: inline-block;
+        align-items: flex-end;
+        display: flex;
         
 
         
