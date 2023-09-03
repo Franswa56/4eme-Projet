@@ -114,7 +114,7 @@ body {
 .menu-content {
   display: flex;
   flex-direction: column;
-  padding: 0px;
+  margin-bottom: -35px;
   flex: 1;
 }
 
@@ -126,6 +126,7 @@ body {
   display: flex;
   flex-direction: column;
   padding-bottom: 40px;
+  flex: 1;
 }
 .menu-page__title {
   font-family: "Shrikhand", sans-serif;
