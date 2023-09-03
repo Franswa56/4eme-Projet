@@ -4,6 +4,7 @@
 
 $main-color:#F6F6F6;
 $second-color: #9356DC;
+$third-color: #99E2D0;
 @mixin bold-title {
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
@@ -190,7 +191,7 @@ body {
 .menu-content {
     display: flex;
     flex-direction: column;
-    margin-bottom: -35px;
+    margin-bottom: -45px;
     flex: 1;
 }
 
@@ -233,6 +234,16 @@ body {
         padding-left: 10px;
         font-size: 18px;
         font-weight: 50;
+        &::after {
+            display: block;
+            content: "_____";
+            color: #99E2D0;
+            width: 30px;
+            font-weight: 900;
+            font-size: 22px;
+            height: 0.25rem;
+            transform: translateY(-15px);
+        }
         
     }
 }
@@ -324,7 +335,7 @@ body {
         height: 100%;
         width: 55px;
         transition: transform 500ms ease-in-out;
-        background-color: aquamarine;
+        background-color: $third-color;
         position: absolute;
         top: 0;
         right: 0;
@@ -455,8 +466,8 @@ body {
     flex-direction: column;
     gap: 25px;
     padding-left: 17px;
-    padding-right: 17px;
-    padding-bottom: 66px;
+    padding-right: 17px;    
+    margin-bottom: -10px;
     &__title {
         @include bold-title;
     }
@@ -464,6 +475,7 @@ body {
 .resto-card {
     @include card-style;
     height: 250px;
+    margin-bottom: 30px;
     &__link {
         text-decoration: none;
         color: black;
@@ -516,7 +528,7 @@ body {
 .footer {
 
     background-color: #353535;
-    padding: 40px 0px 10px 25px;
+    padding: 35px 0px 10px 25px;
     flex: 1;
 
     &__title {
@@ -524,6 +536,7 @@ body {
         font-family: 'Shrikhand', sans-serif;
         font-size: 18px;
         font-weight: 400;
+        margin-top: 0px;
     }
     &__subtitle {
         list-style: none;

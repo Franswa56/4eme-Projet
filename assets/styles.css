@@ -114,7 +114,7 @@ body {
 .menu-content {
   display: flex;
   flex-direction: column;
-  margin-bottom: -35px;
+  margin-bottom: -45px;
   flex: 1;
 }
 
@@ -168,6 +168,16 @@ body {
   padding-left: 10px;
   font-size: 18px;
   font-weight: 50;
+}
+.menu-page__subtitle::after {
+  display: block;
+  content: "_____";
+  color: #99E2D0;
+  width: 30px;
+  font-weight: 900;
+  font-size: 22px;
+  height: 0.25rem;
+  transform: translateY(-15px);
 }
 
 .menu-container {
@@ -257,7 +267,7 @@ body {
   height: 100%;
   width: 55px;
   transition: transform 500ms ease-in-out;
-  background-color: aquamarine;
+  background-color: #99E2D0;
   position: absolute;
   top: 0;
   right: 0;
@@ -410,7 +420,7 @@ body {
   gap: 25px;
   padding-left: 17px;
   padding-right: 17px;
-  padding-bottom: 66px;
+  margin-bottom: -10px;
 }
 .restaurants__title {
   font-family: "Roboto", sans-serif;
@@ -423,6 +433,7 @@ body {
   background-color: #F6F6F6;
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
   height: 250px;
+  margin-bottom: 30px;
 }
 .resto-card__link {
   text-decoration: none;
@@ -479,7 +490,7 @@ body {
 
 .footer {
   background-color: #353535;
-  padding: 40px 0px 10px 25px;
+  padding: 35px 0px 10px 25px;
   flex: 1;
 }
 .footer__title {
@@ -487,6 +498,7 @@ body {
   font-family: "Shrikhand", sans-serif;
   font-size: 18px;
   font-weight: 400;
+  margin-top: 0px;
 }
 .footer__subtitle {
   list-style: none;
