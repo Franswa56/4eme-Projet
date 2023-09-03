@@ -191,6 +191,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 0px;
+    flex: 1;
 }
 
 .menu-page {
@@ -255,17 +256,16 @@ body {
         transition: transform 2s ease-in-out;
         &:hover {
             .menu-container__card-price {
-            margin-right: 45px;
-          }
-            .check {
-              transform: translateX(0);
-              transition: transform 500ms;
-              i {
-                transform: rotate(360deg);
-                transition: transform 500ms;
-              }
+                margin-right: 60px;
             }
-          }
+            .menu-container__check {
+                transform: translateX(0%);
+                
+            }
+            .menu-container__check__valid {
+                transform: rotate(360deg);
+            }          
+        }
         &:nth-child(1) {
             animation-delay: 0.2s;
         }
@@ -281,14 +281,7 @@ body {
         &:hover::after {
             transform: translateX(0%);
 
-        } 
-        
-        &:hover .menu-container__card-price {
-
-        }
-        &:not(:hover) .menu-container__card-price {
-            animation: price-reverse 0.7s forwards;
-        }   
+        }  
     }
     &__card-title {
         margin: 0px;
@@ -302,6 +295,7 @@ body {
     }
     &__card-content {
           overflow: hidden;
+          text-overflow: ellipsis;
           white-space: nowrap;
           flex: 1;
           justify-content: space-between;
@@ -313,19 +307,34 @@ body {
         margin: 0 0 0.75rem 0.75rem;
         text-overflow: ellipsis;
         overflow: hidden;
-        width: 300px;
     }
     &__card-price {
         font-weight: 700;
         font-family: 'Roboto', sans-serif;
         font-size: 16px;
-        margin: 0.75rem;
+        margin: 12px;
+        margin-left: 5px;
         align-items: flex-end;
         display: flex;
-        transition: margin-right 500ms;
-        
-
-        
+        transition: margin-right 700ms;   
+    }
+    &__check{
+        height: 100%;
+        width: 55px;
+        transition: transform 500ms ease-in-out;
+        background-color: aquamarine;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateX(100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        &__valid {
+            font-size: 32px;
+            transition: transform 600ms ease-in-out;
+        }
     }
 
 
@@ -503,8 +512,10 @@ body {
 }
 
 .footer {
+
     background-color: #353535;
-    padding: 10px 0px 10px 25px;
+    padding: 40px 0px 10px 25px;
+    flex: 1;
 
     &__title {
         color: white;
