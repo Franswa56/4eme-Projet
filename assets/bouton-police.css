@@ -1,0 +1,30 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,500italic,700,700italic,300,300italic);
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  width: 215px;
+  background: linear-gradient(0deg, #9356DC, #dc56b5);
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.3);
+  transition: filter 0.2s;
+}
+.button:hover {
+  filter: brightness(1.15);
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5);
+}
+.button__title {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0px;
+  padding: 13px 19px;
+  text-decoration: none;
+}
+.button__link {
+  text-decoration: none;
+  width: 215px;
+  align-self: center;
+}/*# sourceMappingURL=bouton-police.css.map */

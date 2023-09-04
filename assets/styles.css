@@ -258,7 +258,7 @@
   transform: translateX(0%);
 }
 .menu-container__card:hover .menu-container__check__valid {
-  animation: validate 5s ease both;
+  animation: validate 600ms cubic-bezier(0, -0.78, 0.8, 0.04) both;
 }
 .menu-container__card:nth-child(1) {
   animation-delay: 0.2s;
@@ -323,7 +323,6 @@
 }
 .menu-container__check__valid {
   font-size: 32px;
-  animation: 1s linear;
 }
 
 @media (min-width: 768px) {

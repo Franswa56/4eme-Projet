@@ -1,4 +1,7 @@
 
+@import "./variables-mixins.scss";
+@import "./keyframes.scss";                    
+                    
                     //Pages Menu//
 
 .menu-image {
@@ -100,7 +103,7 @@
                 
             }
             .menu-container__check__valid {
-                animation: validate 1s ease both;
+                animation: validate 600ms cubic-bezier(0,-0.78,.8,.04) both;
             }          
         }
         &:nth-child(1) {
@@ -165,9 +168,7 @@
         justify-content: center;
         color: white;
         &__valid {
-            font-size: 32px;
-            animation: 1s linear;
-            
+            font-size: 32px;            
         }
     }
 
