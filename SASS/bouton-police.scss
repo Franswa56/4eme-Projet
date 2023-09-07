@@ -1,0 +1,19 @@
+@import "./variables-mixins.scss";                    
+                     
+                     //Polices//
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,500italic,700,700italic,300,300italic);
+
+                     //Boutons//
+
+.button {
+    @include button-style;
+     &__title {
+         @include button-title;
+     }
+     &__link {
+         text-decoration: none;
+         width: 215px;
+         align-self: center;
+     }  
+ }

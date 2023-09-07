@@ -1,0 +1,40 @@
+.loader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  animation: loader 0.01s;
+  animation-delay: 1.6s;
+  animation-fill-mode: both;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loader__item {
+  height: 35px;
+  width: 35px;
+  animation: jump 1s;
+  animation-iteration-count: 1;
+}
+.loader__itemContainer {
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+}
+.loader__item--1 {
+  color: #9356DC;
+  font-size: 42px;
+}
+.loader__item--2 {
+  color: #9356DC;
+  animation-delay: 0.25s;
+  font-size: 42px;
+}
+.loader__item--3 {
+  color: #9356DC;
+  animation-delay: 0.5s;
+  font-size: 42px;
+}/*# sourceMappingURL=loader.css.map */
