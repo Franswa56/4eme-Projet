@@ -147,6 +147,47 @@
   font-size: 42px;
 }
 
+@keyframes card-slide {
+  0% {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(35px);
+  }
+  75% {
+    transform: translateY(-35px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes validate {
+  0% {
+    transform: rotate(0deg) scale(50%);
+  }
+  50% {
+    transform: rotate() scale(100%);
+  }
+  100% {
+    transform: rotate(360deg) scale(120%);
+  }
+}
 .menu-image {
   width: 100vw;
   max-height: 300px;
@@ -377,6 +418,47 @@
   align-self: center;
 }
 
+@keyframes card-slide {
+  0% {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(35px);
+  }
+  75% {
+    transform: translateY(-35px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes validate {
+  0% {
+    transform: rotate(0deg) scale(50%);
+  }
+  50% {
+    transform: rotate() scale(100%);
+  }
+  100% {
+    transform: rotate(360deg) scale(120%);
+  }
+}
 .location {
   position: relative;
   text-align: center;
