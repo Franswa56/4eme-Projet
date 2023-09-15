@@ -31,13 +31,13 @@
 }
 @keyframes validate {
   0% {
-    transform: rotate(0deg) scale(50%);
+    transform: rotate(0deg) scale(0.5);
   }
   50% {
-    transform: rotate() scale(100%);
+    transform: rotate(180deg) scale(1);
   }
   100% {
-    transform: rotate(360deg) scale(120%);
+    transform: rotate(360deg) scale(1.2);
   }
 }
 .header {
@@ -70,6 +70,8 @@
   padding: 35px 0px 10px 25px;
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 2;
 }
 .footer__title {
   color: white;
@@ -188,24 +190,24 @@
 }
 @keyframes validate {
   0% {
-    transform: rotate(0deg) scale(50%);
+    transform: rotate(0deg) scale(0.5);
   }
   50% {
-    transform: rotate() scale(100%);
+    transform: rotate(180deg) scale(1);
   }
   100% {
-    transform: rotate(360deg) scale(120%);
+    transform: rotate(360deg) scale(1.2);
   }
 }
 .menu-image {
   width: 100vw;
   max-height: 300px;
-  -o-object-fit: cover;
      object-fit: cover;
 }
 
 .title-and-heart {
   display: flex;
+  align-items: baseline;
 }
 
 .menu-content {
@@ -224,6 +226,7 @@
   flex-direction: column;
   padding-bottom: 40px;
   flex: 1;
+  z-index: 0;
 }
 .menu-page__title {
   font-family: "Shrikhand", sans-serif;
@@ -459,13 +462,13 @@
 }
 @keyframes validate {
   0% {
-    transform: rotate(0deg) scale(50%);
+    transform: rotate(0deg) scale(0.5);
   }
   50% {
-    transform: rotate() scale(100%);
+    transform: rotate(180deg) scale(1);
   }
   100% {
-    transform: rotate(360deg) scale(120%);
+    transform: rotate(360deg) scale(1.2);
   }
 }
 .location {
@@ -486,6 +489,7 @@
 }
 .location__logo {
   display: inline;
+  color: black;
 }
 
 .reservation {
@@ -628,8 +632,7 @@
 .resto-card__image {
   height: 75%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 20px 20px 0px 0px;
 }
 .resto-card__content {
