@@ -200,6 +200,7 @@
 .resto-card__image {
   height: 75%;
   width: 100%;
+  -o-object-fit: cover;
      object-fit: cover;
   border-radius: 20px 20px 0px 0px;
 }
@@ -267,7 +268,7 @@
     padding: 0px 0px 75px 0px;
   }
   .restaurants__title {
-    grid-column-start: 1;
+    grid-column-start: 0;
     grid-column-end: 2;
     text-align: left;
   }
