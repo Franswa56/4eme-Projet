@@ -35,6 +35,8 @@
     padding: 35px 0px 10px 25px;
     display: flex;
     flex-direction: column;
+    position: relative;
+    z-index: 2;
 
     &__title {
         color: white;

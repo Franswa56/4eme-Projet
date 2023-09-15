@@ -30,13 +30,13 @@
 }
 @keyframes validate {
   0% {
-    transform: rotate(0deg) scale(50%);
+    transform: rotate(0deg) scale(0.5);
   }
   50% {
-    transform: rotate() scale(100%);
+    transform: rotate(180deg) scale(1);
   }
   100% {
-    transform: rotate(360deg) scale(120%);
+    transform: rotate(360deg) scale(1.2);
   }
 }
 .location {
@@ -57,6 +57,7 @@
 }
 .location__logo {
   display: inline;
+  color: black;
 }
 
 .reservation {
@@ -199,7 +200,6 @@
 .resto-card__image {
   height: 75%;
   width: 100%;
-  -o-object-fit: cover;
      object-fit: cover;
   border-radius: 20px 20px 0px 0px;
 }
@@ -267,7 +267,7 @@
     padding: 0px 0px 75px 0px;
   }
   .restaurants__title {
-    grid-column-start: 0;
+    grid-column-start: 1;
     grid-column-end: 2;
     text-align: left;
   }
