@@ -200,8 +200,7 @@
 .resto-card__image {
   height: 75%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 20px 20px 0px 0px;
 }
 .resto-card__content {
